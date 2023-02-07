@@ -8,7 +8,6 @@ function clearBit(n, i) {
     return (n & revertMask).toString(2)
 
 }
-
 console.log(clearBit(309, 4))
 
 //          8 7 6 5 4 3 2 1 0

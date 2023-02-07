@@ -1,12 +1,15 @@
+// Bubble sort is a simple sorting algorithm that works by repeatedly swapping adjacent elements if they are in the wrong order.
 function sort(array) {
     let counter = 1
-    while (counter < array.length - 1) {
-        if (array[i] > array[i + 1]) {
-            let temp = array[i + 1]
-            array[i + 1] = array[i]
-            array[i] = temp
-        }
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < array.length - i; j++) {
+            if (array[j] > array[j + 1]) {
+                let temp = array[j + 1]
+                array[j + 1] = array[j]
+                array[j] = temp
+            }
 
+        }
     }
     return array
 }
